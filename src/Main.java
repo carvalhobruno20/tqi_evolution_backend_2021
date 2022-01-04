@@ -14,14 +14,15 @@ public class Main {
         cliente1.setEmail("teste@teste.com.br");
         cliente1.setSenha("teste");
 
-        //System.out.println(cliente1);
 
+
+        LocalDate localDate = LocalDate.now();
         Empretimo cliente2 = new Empretimo();
-        cliente2.setParcela(25);
+        cliente2.setParcela(80);
         cliente2.totalParcela();
         cliente2.setValorEmprestimo(450000);
-        cliente2.setDataPrimeiraParcela(LocalDate.now());
+        cliente2.setDataPrimeiraParcela(localDate.plusMonths(3));
 
-        System.out.println(cliente2);
+        //System.out.println(cliente2);
     }
 }
